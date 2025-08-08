@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Star - Land Freight Solutions</title>
+    <!-- Use Tailwind CSS for a modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use the Inter font for professional typography -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+            color: #2d3748;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-900 hover:text-blue-700 transition duration-300">ROYAL STAR</a>
+            <div class="hidden md:flex items-center space-x-reverse space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-900 transition duration-300 font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-900 transition duration-300 font-medium">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-900 transition duration-300 font-medium">Services</a>
+                <a href="advantage.html" class="text-gray-600 hover:text-blue-900 transition duration-300 font-medium">Our Advantage</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-900 transition duration-300 font-medium">Contact Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-500 hover:text-blue-900 focus:outline-none focus:text-blue-900 transition duration-300">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner pb-4">
+            <a href="index.html" class="block px-6 py-2 text-gray-600 hover:text-blue-900 transition duration-300 font-medium">Home</a>
+            <a href="about.html" class="block px-6 py-2 text-gray-600 hover:text-blue-900 transition duration-300 font-medium">About Us</a>
+            <a href="services.html" class="block px-6 py-2 text-gray-600 hover:text-blue-900 transition duration-300 font-medium">Services</a>
+            <a href="advantage.html" class="block px-6 py-2 text-gray-600 hover:text-blue-900 transition duration-300 font-medium">Our Advantage</a>
+            <a href="contact.html" class="block px-6 py-2 text-gray-600 hover:text-blue-900 transition duration-300 font-medium">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <div class="relative bg-gray-900 h-96 md:h-screen flex items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://placehold.co/1920x1080/011f4b/ffffff?text=A+fleet+of+trucks+on+the+road" alt="" class="w-full h-full object-cover opacity-50">
+            </div>
+            <div class="relative z-10 px-6 max-w-4xl mx-auto text-white">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">A Journey Driven by Excellence</h1>
+                <p class="text-lg md:text-xl font-light mb-8">
+                    Royal Star stands as a symbol of reliability and precision in land freight transportation, redefining how cargo moves across Egypt.
+                </p>
+                <a href="services.html" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+
+        <!-- About Us Preview -->
+        <section class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Mastering Freight Transport Across Egypt</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+                    With over 6 years of experience in the Egyptian market and as a proud member of Orient Group, Royal Star has built a legacy of trust and operational excellence. Our integrated approach and commitment to professionalism ensures every logistical challenge is met with a tailored and efficient solution.
+                </p>
+                <a href="about.html" class="mt-8 inline-block text-blue-600 font-semibold border-b-2 border-blue-600 hover:border-blue-700 transition duration-300">Discover Our Story</a>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="py-20 md:py-32 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Our Comprehensive Services</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-12">
+                    We offer a full spectrum of land freight solutions, from standard container transport to specialized heavy cargo, all managed with unparalleled precision and care.
+                </p>
+                <a href="services.html" class="mt-12 inline-block text-blue-600 font-semibold border-b-2 border-blue-600 hover:border-blue-700 transition duration-300">View All Services</a>
+            </div>
+        </section>
+        
+        <!-- Contact Us Preview -->
+        <section class="py-20 md:py-32 bg-white text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Connect with Our Experts</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-8">
+                    Our team is ready to provide you with tailored solutions and exceptional service.
+                </p>
+                <a href="contact.html" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Royal Star. All rights reserved.</p>
+            <p class="mt-2">A proud member of Orient Group.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
